@@ -3,7 +3,7 @@ package br.com.guilhermeoli.singleton;
 /**
  * @author guiol
  */
-public class DemoSingletonPropriedadeThread {
+public class DemoSingletonPropriedadeThreadSyncronized {
 
     public static void main(String[] args) {
         Thread t1 = new Thread(new ThreadFoo());
@@ -17,7 +17,7 @@ public class DemoSingletonPropriedadeThread {
 
         @Override
         public void run() {
-            SingletonPropriedade singleton = SingletonPropriedade.getInstance("Teste");
+            SingletonPropriedadeSyncronized singleton = SingletonPropriedadeSyncronized.getInstance("Teste");
             System.out.println(singleton.getValue());
         }
     }
@@ -26,7 +26,7 @@ public class DemoSingletonPropriedadeThread {
 
         @Override
         public void run() {
-            SingletonPropriedade singleton = SingletonPropriedade.getInstance("Teste1");
+            SingletonPropriedadeSyncronized singleton = SingletonPropriedadeSyncronized.getInstance("Teste1");
             System.out.println(singleton.getValue());
         }
     }
