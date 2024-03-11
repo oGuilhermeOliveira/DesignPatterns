@@ -7,7 +7,12 @@ public class Gerente {
 
     BurgerBuilder builder;
 
-    public Gerente(BurgerBuilder builder) {
+//    public Gerente(BurgerBuilder builder) {
+//        this.builder = builder;
+//    }
+
+
+    public void setBuilder(BurgerBuilder builder) {
         this.builder = builder;
     }
 
